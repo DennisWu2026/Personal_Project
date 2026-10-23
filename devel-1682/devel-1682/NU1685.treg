@@ -1,0 +1,302 @@
+﻿; =============================================================================
+; ============================== TRIM PARAMETER  ==============================
+; =============================================================================
+; ===                                                                       ===
+; ===   [PARAMETER NAME]                                                    ===
+; ===                                                                       ===
+; ===   Target          = TRIM TARGET (with unit conversion  eg. u=10e-6 )  ===
+; ===   Trim_type       = TRIM TYPE   ("abs", "rel", "min" or "max" )       ===
+; ===   Table           = TRIM TABLE  ("*0%, -0.362%" or "5mv, *10mV")      ===
+; ===                                   ^                      ^            ===
+; ===                                   |                      |            ===
+; ===             START VALUE ( value copied into working after dut.sot() ) ===
+; ===                                                                       ===
+; ===   Trim_start_adj  = ADJUST START VALUE ("true" or "false")            ===
+; ===                                                                       ===
+; =============================================================================
+;
+[TRIM_BG]
+Target         		= 1.227 V	
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+
+[TRIM_ZTC]
+Target         		= 4 ;uA	
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+
+[TRIM_ADC_VREF_BUFFER]
+Target         		= 2.004 ;V	
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+
+
+[TRIM_ADC_VIN_BUFFER]
+Target         		= 1 ;V	
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+
+[TRIM_OSC]
+Target         		= 48 ;MHZ
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+[TRIM_LS1_COMP]
+Target         		= -2 ;mV
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+[TRIM_LS2_COMP]
+Target         		= -2 ;mV
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+[TRIM_ISNS_GAIN]
+Target         		= 1.012 ;DB
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+
+[TRIM_ISNS_OFFSET]
+Target         		= 5 ;mV
+Trim_type      		= nom	
+Table               = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64
+Trim_start_learn    = 400
+Trim_step_learn     = 50
+Trim_step_char      = 400
+
+
+; =============================================================================
+; ============================== Bit Fields ===================================
+; =============================================================================
+; ===                                                                       === 
+; ===    Version      =    0x1010                                           ===
+; ===       ^                 ^                                             ===
+; ===       |                 |                                             ===
+; ===   SETTING NAME          |                                             ===
+; ===                         |                                             ===
+; ===                    SETTING VALUE                                      ===
+; ===                binary: b1010 = int 10                                 ===
+; ===                int:     1010 = int 1010                               ===
+; ===                hex:   0x1010 = int 4112                               ===
+; ===                                                                       === 
+; =============================================================================
+
+;Option bits
+[*General]
+
+VRECT_OVP1_THD          = b0   ;0  :****
+                               ;1  :13v
+VRECT_OVP2_THD          = b0   ;0  :****
+                               ;1  :15.5v
+LDO_OCP_THD             = b00  ;00 :****
+                               ;01 :****
+                               ;10 :****
+							   ;11 :****
+NA2                     = b0000
+
+MOT_SET                 = b00  ;00 :50ns
+                               ;01 :150ns
+                               ;10 :300ns
+							   ;11 :200ns
+min_off_SET             = b00  ;00 :50ns
+                               ;01 :100ns
+                               ;10 :340ns
+							   ;11 :340ns
+NA1                     = b0000
+
+TRIM_EN_LOW_I			= b0   ;0  :****
+							   ;1  :****
+TRIM_DIS_CLPH_ADAP  	= b0
+TRIM_EN_MOT_MULTI       = b0
+TRIM_ACLOW_EN		    = b0
+TRIM_SS_01_PKT_DIS      = b0
+OTP_DIS_RES_SET		    = b0
+TRIM_IIC_ADDR	        = b00
+TRIM_DIS_OTP   	        = b0
+tran_boost     	        = b00
+TRIM_VRECT_DMY_DIS     	= b0
+tran_boost_ibm   	    = b0
+VOUT_DMY_EN        	    = b0
+TRIM_DIG_IOUT_OFFSET   	= b00000
+AC_CHECK_500K     	    = b1 ;dif
+TTP_FSK_DIS       	    = b0
+EN_OV_SHORT_LS     	    = b0
+TRIM_QI_ID       	    = b00
+TRIM_DEIVICE_ID     	= b101 ;1685
+TRIM_LOCK     	        = b0
+Reserved			    = b00000000
+Reserved1   		    = b00
+ 
+;IIC_COMM_RDSON_OPT      = b0   ;0  :comm2
+;                               ;1  :comm1
+;MTP_VOUT_SET			= b0111110
+;I2C_PSEU_R  			= b0000;0001:4mA
+;							   ;0010:8mA
+;							   ;0100:16mA
+;							   ;1000:32mA
+[*Customer_Register]
+
+
+; =============================================================================
+; ==============================  Build Words  ================================
+; =============================================================================
+; ===                                                                       === 
+; ===   0:             bandgap       =         !                  1         ===
+; ===   ^                ^                     ^                  ^         ===
+; ===   |                |                     |                  |         ===                            
+; === BIT POS in REG     |                     |                  |         ===
+; ===                    |                     |                  |         ===
+; ===          PARAMETER or SETTING NAME       |                  |         ===
+; ===                                          |                  |         === 
+; ===                        INVERT BIT (if '!' is present)       |         ===
+; ===                                                                       ===
+; ===                                     BIT POS in PARAMETER or SETTING   ===
+; ===                                                                       ===
+; =============================================================================
+
+
+[_EEPROM0]
+0:  TRIM_LS2_COMP		    = 0
+1:  TRIM_LS2_COMP	    	= 1
+2:  TRIM_LS2_COMP	    	= 2
+3:  TRIM_LS2_COMP 			= 3
+4:  TRIM_LS1_COMP			= 0
+5:  TRIM_LS1_COMP			= 1
+6:  TRIM_LS1_COMP           = 2
+7:  TRIM_LS1_COMP           = 3
+
+[_EEPROM1]
+0:  TRIM_DIS_CLPH_ADAP		= 0
+1:  Reserved    		    = 0
+2:  TRIM_BG				    = 0
+3:  TRIM_BG					= 1
+4:  TRIM_BG					= 2
+5:  TRIM_BG					= 3 
+6:  TRIM_BG                 = 4
+7:  TRIM_BG                 = 5
+
+[_EEPROM2]
+0:  TRIM_EN_MOT_MULTI    	= 0
+1:  TRIM_ACLOW_EN		    = 0
+2:  TRIM_ADC_VREF_BUFFER	= 0
+3:  TRIM_ADC_VREF_BUFFER	= 1
+4:  TRIM_ADC_VREF_BUFFER	= 2
+5:  TRIM_ADC_VREF_BUFFER	= 3 
+6:  TRIM_ADC_VREF_BUFFER    = 4
+7:  TRIM_ADC_VREF_BUFFER    = 5
+
+[_EEPROM3]
+0:  Reserved   			    = 1
+1:  TRIM_OSC	            = 0
+2:  TRIM_OSC			    = 1
+3:  TRIM_OSC			    = 2
+4:  TRIM_OSC				= 3
+5:  TRIM_OSC			 	= 4 
+6:  TRIM_OSC                = 5
+7:  TRIM_OSC                = 6
+
+[_EEPROM4]
+0:  Reserved     		    = 2
+1:  TRIM_SS_01_PKT_DIS      = 0
+2:  OTP_DIS_RES_SET			= 0
+3:  TRIM_ZTC        	    = 0
+4:  TRIM_ZTC        	    = 1
+5:  TRIM_ZTC                = 2 
+6:  TRIM_ZTC        	    = 3
+7:  TRIM_ZTC                = 4
+
+[_EEPROM5]
+0: Reserved     			= 3
+1: TRIM_ISNS_GAIN           = 0
+2: TRIM_ISNS_GAIN           = 1
+3: TRIM_ISNS_GAIN           = 2
+4: TRIM_ISNS_GAIN       	= 3
+5: TRIM_ISNS_GAIN       	= 4
+6: TRIM_ISNS_GAIN           = 5
+7: TRIM_ISNS_GAIN           = 6
+
+[_EEPROM6]
+0:  TRIM_IIC_ADDR    		= 0 
+1:  TRIM_IIC_ADDR		    = 1 
+2:  TRIM_ISNS_OFFSET		= 0 
+3:  TRIM_ISNS_OFFSET		= 1
+4:  TRIM_ISNS_OFFSET		= 2
+5:  TRIM_ISNS_OFFSET		= 3 
+6:  TRIM_ISNS_OFFSET        = 4
+7:  TRIM_ISNS_OFFSET        = 5
+
+[_EEPROM7]
+0:  Reserved        	    = 4
+1:  TRIM_DIS_OTP            = 0
+2:  TRIM_ADC_VIN_BUFFER	    = 0
+3:  TRIM_ADC_VIN_BUFFER	    = 1
+4:  TRIM_ADC_VIN_BUFFER	    = 2
+5:  TRIM_ADC_VIN_BUFFER	    = 3 
+6:  TRIM_ADC_VIN_BUFFER     = 4
+7:  TRIM_ADC_VIN_BUFFER     = 5
+
+[_EEPROM8]
+0:  tran_boost     	  	    = 0
+1:  tran_boost		        = 1
+2:  TRIM_VRECT_DMY_DIS		= 0
+3:  tran_boost_ibm		    = 0
+4:  VOUT_DMY_EN     		= 0
+5:  TRIM_EN_LOW_I			= 0
+6:  Reserved                = 5
+7:  Reserved                = 6
+
+[_EEPROM9]
+0:  TRIM_DIG_IOUT_OFFSET	= 0
+1:  TRIM_DIG_IOUT_OFFSET	= 1
+2:  TRIM_DIG_IOUT_OFFSET	= 2
+3:  TRIM_DIG_IOUT_OFFSET	= 3
+4:  TRIM_DIG_IOUT_OFFSET	= 4
+5:  AC_CHECK_500K   		= 0
+6:  TTP_FSK_DIS 			= 0
+7:  EN_OV_SHORT_LS          = 0
+
+[_EEPROM10]
+0:  TRIM_QI_ID 			    = 0
+1:  TRIM_QI_ID	            = 1
+2:  TRIM_DEIVICE_ID		    = 0
+3:  TRIM_DEIVICE_ID		    = 1
+4:  TRIM_DEIVICE_ID			= 2
+5:  Reserved1			 	= 0
+6:  Reserved1               = 1
+7:  TRIM_LOCK               = 0
+
+
+; =============================================================================
+; ==============================  Customer  Register  =========================
+
+
+
